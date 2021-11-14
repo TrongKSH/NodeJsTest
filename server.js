@@ -3,7 +3,7 @@ const app = express()
 const swaggerJsDoc = require('swagger-jsdoc')
 const swaggerUi = require('swagger-ui-express')
 
-const PORT = process.env.PORT || 5002
+const PORT = process.env.PORT || 5000
 
 const swaggerOptions = {
     definition: {
@@ -15,7 +15,7 @@ const swaggerOptions = {
         },
         servers: [
             {
-                url: "http://localhost:5002/api/v0",
+                url: `http://localhost:${PORT}/api/v0`,
             },
         ],
     },
