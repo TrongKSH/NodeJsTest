@@ -7,20 +7,34 @@ Issue Management API is an api provider written with NodeJS and MySQL and Sequel
 - Get an issue by IssueId
 - Update an existing issue
 
-## Installation
+## Note
+- Im using mysql with below information:
+  - HOST: localhost
+  - USER: root
+  - PASSWORD: password
+  - PORT: 3306
+  
+- Please change it in [dbConfig.js] if you have another configuration
 
-Install the dependencies:
+## Installation
+1. Clone the repository:
+```
+gh repo clone TrongKSH/NodeJsTest
+```
+2. Move to cloned folder
+
+3. Install the dependencies:
 
 ```bash
 $ npm install
 ```
 
-Run ensure DB script:
+4. Run ensure DB script:
 ```bash
 $ npm run custom
 ```
 
-Start Issue management API
+5. Start Issue management API
 ```bash
 $ npm start
 ```
